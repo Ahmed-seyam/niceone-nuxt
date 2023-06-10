@@ -1,36 +1,36 @@
 <script lang="ts" setup>
 import { AppConfigInput } from '@nuxt/schema'
 import { AppSetup } from './utils/app'
-import { ITheme } from './utils/theme'
+
 AppSetup()
-const theme = useState<ITheme>('theme.current')
 const locale = useState<string>('locale.setting')
 const app = useAppConfig() as AppConfigInput
 
 useHead({
   title: app.name,
-  titleTemplate: '%s - Nuxt 3 Awesome Starter',
+  titleTemplate: '%s ',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
       hid: 'description',
       name: 'description',
-      content: 'Nuxt 3 Awesome Starter',
+      content: 'perfumes shop',
     },
   ],
-  link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  link: [{ rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' }],
 })
+
+const direction: any = ref(locale.value === 'ar' ? 'rtl' : 'ltr')
 </script>
 
 <template>
-  <Html :class="`${theme === 'dark' ? 'dark' : ''}`" :lang="locale">
-    <Body
-      class="antialiased duration-300 transition-colors text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900 overscroll-y-none"
-    >
-      <NuxtLayout>
-        <NuxtLoadingIndicator :height="5" :duration="3000" :throttle="400" />
-        <NuxtPage />
-      </NuxtLayout>
-    </Body>
-  </Html>
+  <Body :dir="direction" class="antialiased duration-300 transition-colors text-gray-800 bg-white overscroll-y-none">
+    <div id="app  bg-grey-light-1 !ltr:font-[Karla,sans-serif]">
+      <NuxtLoadingIndicator :height="5" :duration="3000" :throttle="400" />
+
+      <NuxtPage />
+      <Toast />
+
+    </div>
+  </Body>
 </template>

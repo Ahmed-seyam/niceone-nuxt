@@ -1,0 +1,68 @@
+nav:
+  categories: جميع الاقسام
+  login: دخول
+  register: تسجيل
+  account: حسابي
+button:
+  toggle_langs: "غير اللغه"
+  see_all: أعرض الكل
+
+save: حفظ
+delete: حذف
+update: تحديث
+
+close: اغلاق
+
+notifications: الاشعارات
+
+cart: سلة التسوق
+wishlist: المفضلة
+search: البحث
+
+home:
+  explore_cat: اكتشف الأقسام
+  recent_prodcuts: وصل حديثا
+
+footer:
+  overview: نايس وان هو من افضل البرندات علي مستوي العالم ويتميز بالجوده والعيديد من المزايا
+  quick_links: روابط مختصرة
+  home: الرئيسية
+  about: من نحن
+  store: المتجر
+  contact: تواصل معنا
+  copy_right: جميع الحقوق محفوظه. لشركه نايس وان 2023
+  terms_and_conditions: الشروط والأحكام
+  policy: السياسة
+
+categories: الأقسام
+company: نايس وان
+
+dashboard:
+  special_offers: عروض مخصصة لك
+  just_for_you: لك فقط
+  privacy: الخصوصية
+  returns: المرتجعات
+  orders: الطلبات
+  logout: الخروج
+  overview: الرئيسية
+  recent_notifications: أخر الاشعارات
+  pending_orders: طلبات لم تتم
+  completed_orders: طلبات تمت
+  spent: صرفت
+  my_money: أموالي
+  all_orders: جميع الطلبات
+  user_info: المعلومات الشخصية
+  user_pass: كلمة السر
+
+image: صورة
+price: السعر
+currency: العملة
+quantity: الكمية
+name: الاسم
+status: الحالة
+amount: المبلغ
+shipping: الشحن
+
+product:
+  add_to_cart: أضف للسلة
+  new: جديد

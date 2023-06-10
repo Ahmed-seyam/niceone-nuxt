@@ -1,0 +1,69 @@
+// .dark .shortcut {
+//   &--item {
+//     background-color: $dark-primary;
+
+//   }
+// }
+.shortcut {
+  &--list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-row: unset !important;
+  }
+
+  &--item {
+    padding: 0.4rem 2rem;
+    background-color: var(--bluegray-50);
+    color: var(--bluegray-900);
+    border-radius: 20rem;
+    font-size: .9rem;
+    font-weight: 400;
+    cursor: pointer;
+    background-size: 250%;
+    transition: all 0.1s ease-in-out;
+    text-transform: lowercase;
+
+    @include respond(tap-land-3) {
+      padding: 0.9rem 2rem;
+    }
+  
+
+    &-m {
+      padding: 0.6rem 2rem;
+    }
+    &-s {
+      padding: 0.3rem 1.5rem;
+    }
+  }
+
+  &--item.active {
+    color: var(--bluegray-50);
+    font-weight: 400;
+
+    color: $color-grey-light-1;
+    background-position: 100%;
+    
+    background-image: linear-gradient(
+      60deg,
+      transparent 0%,
+      transparent 50%,
+      var(--bluegray-600) 50%
+    );
+  }
+}
+
+.taps {
+  .shortcut--item.active {
+    color: var(--bluegray-50);
+    background-position: 100%;
+    
+
+    background-image: linear-gradient(
+      60deg,
+      transparent 0%,
+      transparent 50%,
+      var(--bluegray-600) 50%
+    );
+  }
+}

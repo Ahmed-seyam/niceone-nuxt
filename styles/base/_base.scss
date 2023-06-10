@@ -1,0 +1,94 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 90%;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+ pre {
+  font-family: inherit;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  white-space: pre-wrap !important;
+}
+
+// .dark pre {
+//   color: $color-grey-light-4
+// }
+
+body {
+  box-sizing: border-box;
+  position: relative;
+}
+
+::selection {
+  background-color: $color-tertiary;
+  color: $color-white;
+}
+
+input,
+textarea,
+button,
+select,
+div,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// .dark {
+//   ::-webkit-scrollbar-track {
+//     background: $color-black;
+//   }
+// }
+
+
+ul {
+  list-style: none;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+svg > * {
+  pointer-events: none;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  margin: 5.2rem 0 0;
+  background: $color-white !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  var(--primary-600) !important;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-300) !important;
+}
+
+// .dark input {
+//   color: $color-white
+// }

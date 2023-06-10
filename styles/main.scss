@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+@import "./abstract/_vars.scss";
+
+
+@import "./abstract/_mixins.scss";
+
+@import "./components/_link.scss";
+@import "./components/_menu.scss";
+@import "./components/_shortcuts.scss";
+@import "./components/_table.scss";
+
+@import "./base/_base.scss";
+@import "./base/_typography.scss";
+@import "./base/_utilities.scss";
+@import "./base/_animate.scss";
+
+@import "./layout/_background.scss";
+@import "./layout/_widget.scss";
+@import "./layout/_alert.scss";
+
+@import './markdown.css';
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+// html.dark {
+//   background: #121212;
+//   color-scheme: dark;
+// }
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: rgb(13,148,136);
+  opacity: 0.75;
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.p-inputtext {
+  width: 100% !important;
+  border: none !important;
+}

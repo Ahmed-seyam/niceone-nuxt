@@ -1,72 +1,67 @@
-components:
-  language_switcher:
-    change_language: change language
-  theme_switcher:
-    theme: theme
-    change_theme: change theme
-pages:
-  index:
-    title: nuxt 3[]awesome[]starter
-  404:
-    title: page not found
-  blank:
-    nav: blank
-    title: blank page
-    description: this is a blank page
-    just_blank_page_with_title: just blank page with title
-  post:
-    nav: post
-    title: post
-    description: this is a post page
-  test:
-    nav: test
-    title: testing
-    description: this is a test page
-    counter: counter
-    increment: increment
-    decrement: decrement
-    reset: reset
-    identity: identity
-    full_name: fullName
-  getting-started:
-    nav: getting started
-    title: getting started
-    description: this is a getting started page
-  setting:
-    nav: setting
-    title: setting
-    description: this is a setting page
-    sections:
-      validate_username:
-        title: validate github profile
-        description: type your github username and click the button to validate.
-        footer: Learn more about
-        footer_button: validate
-        footer_link: github users api
-      bot_id:
-        title: bot id
-        description: This is your bot ID.
-        footer: Used when interacting with the bot.
-      protection_spam:
-        title: spam protection
-        description: toggle enable to remove the red border
-        footer: if enable we will secure your comments from spam
-      advanced_enable_advanced:
-        title: enable advanced settings
-        description: you can enable advanced settings to change the settings
-      advanced_dir_listing:
-        title: directory listing
-        description: if no index file is present within a directory, the directory contents will be displayed.
-  dashboard:
-    nav: dashboard
-    title: dashboard
-    index:
-      nav: home
-      title: home
-banners:
-  welcome: hello, welcome to %{app_name}!
-others:
-  learn_more: learn more
-  copy: copy
-  enabled: enabled
-  disabled: disabled
+nav:
+  categories: all categories
+  login: login
+  register: register
+  account: my account
+
+button:
+  toggle_langs: Change languages
+  see_all: see all
+save: save
+delete: delete
+update: update
+
+close: close
+
+notifications: notifications
+
+cart: cart
+wishlist: wishlist
+search: search
+
+home:
+  explore_cat: explore categories
+  recent_prodcuts: recent products
+
+footer:
+  overview: orem ipsum dolor sit amet, consectetur adipiscing elit. donec euismod varius aliquam
+  quick_links: Quick Links
+  home: home
+  about: about us
+  store: store
+  contact: contact us
+  copy_right: 2023 Company Name. All rights reserved.
+  terms_and_conditions: terms&conditions.
+  policy: policy
+
+company: nice one
+
+dashboard:
+  special_offers: special offers
+  just_for_you: just for you
+  privacy: privacy
+  returns: returns
+  orders: orders
+  logout: logout
+  overview: overview
+  recent_notifications: recent notifications
+  pending_orders: PENDING ORDERS
+  completed_orders: completed ORDERS
+  spent: spent
+  my_money: my money
+  all_orders: all orders
+  user_info: user information
+  user_pass: user password
+
+image: image
+price: price
+currency: currency
+quantity: quantity
+name: name
+status: status
+amount: amount
+shipping: shipping
+
+product:
+  add_to_cart: add to cart
+  new: new

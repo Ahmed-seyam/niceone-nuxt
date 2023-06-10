@@ -7,20 +7,42 @@ export default defineNuxtConfig({
   ssr: true,
 
   // typescripts
-  typescript: {
-    strict: true,
-    typeCheck: true,
+  nitro: {
+    // built server options
+    preset: 'node',
+  },
+  imports: {
+    dirs: ['stores'],
   },
 
+  components: [
+    {
+      path: '~/components',
+      global: true,
+      pathPrefix: false,
+    },
+  ],
   // css
-  css: ['~/assets/sass/vendor.scss', '~/assets/sass/app.scss'],
+
+  //core
+
+  css: [
+    '~/assets/sass/vendor.scss',
+    '~/assets/sass/app.scss',
+    '@unocss/reset/tailwind.css',
+    '@/styles/main.scss',
+    'uno.css',
+    'primevue/resources/themes/lara-light-blue/theme.css',
+    'primevue/resources/primevue.min.css',
+    'primeicons/primeicons.css',
+  ],
 
   // plugins
   plugins: ['~/plugins/navbar.ts'],
 
   // build
   build: {
-    transpile: ['@headlessui/vue'],
+    transpile: ['@headlessui/vue', 'primevue'],
   },
 
   // modules
@@ -30,7 +52,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
-    'nuxt-windicss',
+    '@unocss/nuxt',
   ],
 
   // experimental features

@@ -127,6 +127,7 @@ const updateSecondScope = (category) => {
   secondSopeParent.value = category.title;
 };
 
+// eslint-disable-next-line no-undef
 defineExpose({
   setMegaMenu,
 });

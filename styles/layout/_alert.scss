@@ -3,14 +3,14 @@
 }
 
 .alert {
-  background-color: $color-primary-dark;
+  background-color: var(--gray-100);
   border-radius: 0.7rem;
-  color: $color-white;
+  color: var(--bluegray-900);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30rem;
-  padding: 1.2rem 1.5rem;
+  width: 20rem;
+  padding: .7rem 1rem;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   box-shadow: 0 0 2rem rgba($color-primary-dark, 0.3);
@@ -37,33 +37,33 @@
   }
 
   &__message {
-    font-size: 1.2rem;
-    padding: 0 0 0 1.5rem;
+    font-size: .9rem;
+    padding: 0 0 0 .7rem;
     margin-right: auto;
   }
 
   &__icon {
-    width: 2rem;
-    height: 2rem;
+    width: 1.2rem;
+    height: 1.2rem;
 
     &--success {
-      fill: $color-green;
+      fill: var(--green-700);
     }
 
     &--warning {
-      fill: $color-yellow;
+      fill:var(--yellow-700);
     }
 
     &--error {
-      fill: $color-red;
+      fill: var(--red-700);
     }
 
     &--info {
-      fill: $color-secondary;
+      fill: var(--blue-700);
     }
 
     &--close {
-      fill: $color-red;
+      fill: var(--red-700);
     }
   }
 
@@ -71,4 +71,10 @@
     padding: 0;
     background-color: transparent;
   }
+}
+
+#alerts {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
 }

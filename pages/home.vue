@@ -2,11 +2,14 @@
 definePageMeta({
   layout: 'default',
 })
+
+
+const productsStore = stores.productsStore
+
 </script>
 
 <template>
   <div>
-
     <NuxtLayout>
       <app-header></app-header>
       <app-categories></app-categories>

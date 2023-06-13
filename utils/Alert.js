@@ -1,8 +1,7 @@
 import { isClient } from '@vueuse/core'
 
 const removeAlert = (el, delay) => {
-  if (!el)
-    return
+  if (!el) return
 
   setTimeout(() => {
     el.style.transform = 'translateY(-2rem)'
@@ -14,8 +13,7 @@ const removeAlert = (el, delay) => {
 }
 
 export function Alert(type, message, delay = 1000) {
-  if (!isClient)
-    return
+  if (!process.client) return
 
   const alertsDiv = document.getElementById('alerts')
   // create alert element and insert the markup html into it

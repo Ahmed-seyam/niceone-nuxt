@@ -6,11 +6,6 @@ export default defineNuxtConfig({
   // server side rendering mode
   ssr: true,
 
-  // typescripts
-  nitro: {
-    // built server options
-    preset: 'node',
-  },
   imports: {
     dirs: ['stores'],
   },
@@ -60,8 +55,13 @@ export default defineNuxtConfig({
     reactivityTransform: false,
   },
 
-  // auto import components
-  components: true,
+  runtimeConfig: {
+    public: {
+      nodeENV: 'dev',
+      apiDevBase: process.env.NUXT_API_DEV_BASE,
+      apiProdBase: process.env.NUXT_API_PROD_BASE,
+    },
+  },
 
   // vite plugins
   vite: {

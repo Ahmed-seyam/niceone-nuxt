@@ -31,6 +31,7 @@ const direction: any = ref(locale.value === 'ar' ? 'rtl' : 'ltr')
       <NuxtPage />
       <Toast />
 
+      <div id="alerts"></div>
     </div>
   </Body>
 </template>

@@ -24,7 +24,8 @@ const toggleUserMenu = () => {
 
 const megaMenu = ref(null);
 const setMegaMenu = (val) => {
-  megaMenu.value.setMegaMenu(val);
+  if (megaMenu.value)
+    megaMenu.value.setMegaMenu(val);
 };
 
 const cartSidebar = ref(null);
@@ -64,7 +65,7 @@ const openCart = () => {
       <Image src="/images/logo.png" alt="Image" imageClass="w-[100%] h-[100%] " />
     </router-link>
 
-    <ul class="m-y-[1.3rem] text-[1.2rem] grid grid-flow-col items-center w-[fit-content] gap-[1rem] font-[600]">
+  <ul class="m-y-[1.3rem] text-[1.2rem] grid grid-flow-col items-center w-[fit-content] gap-[1rem] font-[600]">
     <li class="relative" @mouseenter="setMegaMenu(true)" @mouseleave="setMegaMenu(false)" @click="setMegaMenu(true)">
       <Button severity="primary"
         class="all_categories_button !bg-[var(--primary-600)] pointer font-bold grid grid-flow-col items-center gap-[1rem] !p-y-.5rem"
@@ -73,7 +74,7 @@ const openCart = () => {
         {{ t("nav.categories") }}
       </Button>
 
-      <all-categories-menu ref="megaMenu"></all-categories-menu>
+        <all-categories-menu ref="megaMenu"></all-categories-menu>
       </li>
 
       <li v-for="items in 4">
@@ -124,15 +125,15 @@ const openCart = () => {
         </div>
 
         <!-- <Button
-                                    icon-btn
-                                    @click="toggleDark()"
-                                    severity="secondary"
-                                    outlined=""
-                                    rounded
-                                    class="w-[3rem] h-[3rem] !p-0 flex item-center justify-center"
-                                  >
-                                    <div i="carbon-sun dark:carbon-moon" />
-                                  </Button> -->
+                                      icon-btn
+                                      @click="toggleDark()"
+                                      severity="secondary"
+                                      outlined=""
+                                      rounded
+                                      class="w-[3rem] h-[3rem] !p-0 flex item-center justify-center"
+                                    >
+                                      <div i="carbon-sun dark:carbon-moon" />
+                                    </Button> -->
       </div>
 
       <div class="autogrid" v-if="false">

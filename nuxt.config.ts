@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   ],
 
   // plugins
-  plugins: ['~/plugins/navbar.ts'],
+  plugins: ['~/plugins/navbar.ts', '~/plugins/filters.ts'],
 
   // build
   build: {

@@ -24,5 +24,6 @@ export const useMyFetch = (request: any, opts: any) => {
         ? runtimeConfig.public.apiDevBase
         : runtimeConfig.public.apiProdBase,
     ...opts,
+    credentials: true,
   })
 }

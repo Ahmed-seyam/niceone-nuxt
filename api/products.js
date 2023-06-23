@@ -3,6 +3,21 @@ export const fetchProducts = (query) =>
     query,
   })
 
-// export const fetchProducts = () => {
-//   return useMyFetch('/api/v1/product')
-// }
+export const fetchOneProduct = (id) => useMyFetch(`/api/v1/product/${id}`, {})
+
+export const createProduct = (body) =>
+  useMyFetch(`/api/v1/product`, {
+    method: 'POST',
+    body,
+  })
+
+// export const updateProduct = (body, id) =>
+//   useMyFetch(`/api/v1/product/${id}`, {
+//     method: 'PATCH',
+//     body,
+//   })
+
+export const deleteProduct = (id) =>
+  useMyFetch(`/api/v1/product/${id}`, {
+    method: 'DELETE',
+  })

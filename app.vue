@@ -20,12 +20,18 @@ useHead({
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/images/logo.png' }],
 })
 
-const direction: any = ref(locale.value === 'ar' ? 'rtl' : 'ltr')
+const direction: any = computed(() => locale.value === 'ar' ? 'rtl' : 'ltr')
+
+const categoriesStore = stores.categoriesStore;
+
+(async () => {
+  await categoriesStore.fetchCategories()
+})()
 </script>
 
 <template>
   <Body :dir="direction" class="antialiased duration-300 transition-colors text-gray-800 bg-white overscroll-y-none">
-    <div id="app  bg-grey-light-1 !ltr:font-[Karla,sans-serif]">
+    <div id="app" class="bg-grey-light-1 !ltr:font-[Karla,sans-serif]">
       <NuxtLoadingIndicator :height="5" :duration="3000" :throttle="400" />
 
       <NuxtPage />

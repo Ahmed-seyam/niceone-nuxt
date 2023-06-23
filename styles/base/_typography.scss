@@ -1,7 +1,6 @@
 body {
-  font-family: "Readex Pro",sans-serif !important
+  font-family: 'Harmattan', sans-serif;
 }
-
 
 .heading--h1 {
   font-size: 3.6rem;
@@ -50,7 +49,7 @@ body {
     color: $color-tertiary !important;
     &:after {
       position: absolute;
-      content: "";
+      content: '';
       left: 0;
       top: 50%;
       width: 1.6rem;
@@ -128,7 +127,7 @@ body {
   }
 
   &__style--6 {
-    font-family: "Montserrat", cursive;
+    font-family: 'Montserrat', cursive;
     font-size: 3rem;
     text-transform: capitalize;
     color: $color-primary-light;
@@ -140,7 +139,7 @@ body {
     }
     &:after {
       position: absolute;
-      content: "";
+      content: '';
       left: 50%;
       bottom: 0;
       width: 80%;
@@ -171,7 +170,7 @@ body {
     text-transform: capitalize;
     &:after {
       position: absolute;
-      content: "";
+      content: '';
       left: 0;
       top: 50%;
       width: 2.1rem;
@@ -192,7 +191,7 @@ body {
       color: $color-grey-light-4;
       &:after {
         position: absolute;
-        content: "";
+        content: '';
         left: 0;
         top: 50%;
         transform: translateY(-50%);
@@ -229,7 +228,7 @@ body {
     position: relative;
     padding-left: 1.5rem;
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       height: 8px;
       width: 8px;
@@ -249,7 +248,7 @@ body {
     padding-left: 3rem;
     &:after {
       position: absolute;
-      content: "";
+      content: '';
       left: 0;
       top: 50%;
       width: 1.1rem;
@@ -282,7 +281,7 @@ body {
 
     &:after {
       position: absolute;
-      content: "";
+      content: '';
       width: 6px;
       height: 6px;
       top: 0.8rem;
@@ -310,7 +309,6 @@ body {
   margin: 0;
   white-space: pre-wrap;
   font-family: 'Tilt Neon', cursive;
-
 }
 
 .heading {

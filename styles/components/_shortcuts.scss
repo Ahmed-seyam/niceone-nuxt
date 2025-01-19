@@ -17,7 +17,7 @@
     background-color: var(--bluegray-50);
     color: var(--bluegray-900);
     border-radius: 20rem;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 400;
     cursor: pointer;
     background-size: 250%;
@@ -27,7 +27,6 @@
     @include respond(tap-land-3) {
       padding: 0.9rem 2rem;
     }
-  
 
     &-m {
       padding: 0.6rem 2rem;
@@ -43,7 +42,7 @@
 
     color: $color-grey-light-1;
     background-position: 100%;
-    
+
     background-image: linear-gradient(
       60deg,
       transparent 0%,
@@ -57,7 +56,6 @@
   .shortcut--item.active {
     color: var(--bluegray-50);
     background-position: 100%;
-    
 
     background-image: linear-gradient(
       60deg,

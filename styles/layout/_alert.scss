@@ -1,4 +1,4 @@
-.dark .alert{
+.dark .alert {
   background-color: $color-dark-primary !important;
 }
 
@@ -10,11 +10,11 @@
   align-items: center;
   justify-content: space-between;
   width: 20rem;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
   box-shadow: 0 0 2rem rgba($color-primary-dark, 0.3);
-  z-index: 99999999;
+  z-index: 99;
   position: relative;
 
   &:not(:last-child) {
@@ -37,21 +37,21 @@
   }
 
   &__message {
-    font-size: .9rem;
-    padding: 0 0 0 .7rem;
+    font-size: 0.9rem;
+    padding: 0 0 0 0.7rem;
     margin-right: auto;
   }
 
   &__icon {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 
     &--success {
       fill: var(--green-700);
     }
 
     &--warning {
-      fill:var(--yellow-700);
+      fill: var(--yellow-700);
     }
 
     &--error {
@@ -77,4 +77,9 @@
   position: fixed;
   right: 1rem;
   bottom: 1rem;
+}
+
+[dir='rtl'] #alerts {
+  right: unset !important;
+  left: 1rem !important;
 }

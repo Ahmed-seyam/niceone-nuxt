@@ -22,10 +22,10 @@ export default defineNuxtConfig({
   //core
 
   css: [
+    '@/styles/main.scss',
     '~/assets/sass/vendor.scss',
     '~/assets/sass/app.scss',
     '@unocss/reset/tailwind.css',
-    '@/styles/main.scss',
     'uno.css',
     'primevue/resources/themes/lara-light-blue/theme.css',
     'primevue/resources/primevue.min.css',
@@ -48,6 +48,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@vueuse/nuxt',
     '@unocss/nuxt',
+    '@nuxt/image',
   ],
 
   // experimental features
@@ -80,8 +81,8 @@ export default defineNuxtConfig({
   // app config
   app: {
     // global transition
-    pageTransition: { name: 'page', mode: 'out-in' },
-    layoutTransition: { name: 'layout', mode: 'out-in' },
+    // pageTransition: { name: 'page', mode: 'out-in' },
+    // layoutTransition: { name: 'layout', mode: 'out-in' },
   },
 
   // localization - i18n config
@@ -111,16 +112,5 @@ export default defineNuxtConfig({
       },
     },
     scan: true,
-  },
-
-  // content
-  content: {
-    documentDriven: true,
-    markdown: {
-      mdc: true,
-    },
-    highlight: {
-      theme: 'github-dark',
-    },
   },
 })

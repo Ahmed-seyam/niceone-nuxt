@@ -24,7 +24,8 @@ export const isLoggedIn = () =>
   useMyFetch(`/api/v1/user/is-logged-in`, {
     method: 'GET',
   })
-export const forgotPassword = (body) =>
+
+export const forgotMyPassword = (body) =>
   useMyFetch(`/api/v1/user/forgotPassword`, {
     method: 'POST',
     body,

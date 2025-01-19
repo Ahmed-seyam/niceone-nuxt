@@ -1,18 +1,16 @@
 <script setup lang="ts">
 defineOptions({
-  name: "IndexPage",
-});
+  name: 'IndexPage',
+})
 // meta
 definePageMeta({
   layout: 'default',
 })
 
-const router = useRouter();
-router.push("/home");
+const router = useRouter()
+router.push('/home')
 </script>
 
 <template>
-  <NuxtLayout>
-
-  </NuxtLayout>
+  <NuxtLayout> </NuxtLayout>
 </template>

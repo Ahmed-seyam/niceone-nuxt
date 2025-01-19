@@ -14,12 +14,12 @@ const categories = computed(() => categoriesStore.getCategories)
 
       {{ t('home.explore_cat') }}
     </h3>
-
     <div
       class="grid grid-cols-[repeat(auto-fit,minMax(15rem,16rem))] gap-[.7rem]"
+      v-if="categories && Object.keys(categories).length > 0"
     >
       <router-link
-        :to="'/store/' + category.name_en"
+        :to="'/store/' + category.id"
         v-for="category in categories"
         class="category max-w-[16rem] flex flex-col items-center p-y-[2rem] p-x-[4rem] transition bg-white shadow-[0_0_.5rem_rgba(0,0,0,.06)] hover:shadow-[0_0_2rem_rgba(0,0,0,.09)] p-[1rem_2rem] rounded-[2rem]"
       >
@@ -27,8 +27,8 @@ const categories = computed(() => categoriesStore.getCategories)
           class="h-7rem w-7rem rounded-full p-1rem bg-[var(--bluegray-100)] flex items-center justify-center"
         >
           <img
-            v-if="category && category.photo && category.photo.length > 0"
-            :src="'/images/categorys/' + category.photo[0].small_image"
+            v-if="category && category.thumb"
+            :src="'/images/categorys/' + category.thumb"
             class="w-[100%] h-[100%]"
             :alt="category[$filters.t('name_', locale)]"
           />

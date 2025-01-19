@@ -1,7 +1,12 @@
-export const fetchProducts = (query) =>
-  useMyFetch(`/api/v1/product`, {
+import { formatFilter } from './apiFeatures.js'
+
+export const fetchProducts = (query = {}) => {
+  // if (query && Object.keys(query).length > 0) query = formatFilter(query)
+
+  return useMyFetch(`/api/v1/product`, {
     query,
   })
+}
 
 export const fetchOneProduct = (id) => useMyFetch(`/api/v1/product/${id}`, {})
 

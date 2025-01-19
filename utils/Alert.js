@@ -1,5 +1,3 @@
-import { isClient } from '@vueuse/core'
-
 const removeAlert = (el, delay) => {
   if (!el) return
 
@@ -12,7 +10,7 @@ const removeAlert = (el, delay) => {
   }, delay)
 }
 
-export function Alert(type, message, delay = 1000) {
+export function Alert(type, message, delay = 2000) {
   if (!process.client) return
 
   const alertsDiv = document.getElementById('alerts')
@@ -30,7 +28,7 @@ export function Alert(type, message, delay = 1000) {
     case 'success': {
       markup = `
         <svg class='alert__icon alert__icon--${type}'>
-           <use xlink:href='/images/sprite.svg#icon-check-circle' />
+           <use xlink:href='/images/sprite.svg#icon-check' />
         </svg>
         <div class='alert__message'>
           ${message}
@@ -54,6 +52,17 @@ export function Alert(type, message, delay = 1000) {
       markup = `
         <svg class='alert__icon alert__icon--error'>
             <use xlink:href='/images/sprite.svg#icon-alert-triangle'/>
+        </svg>
+        <div class='alert__message'>${message}</div>
+
+    `
+      break
+    }
+
+    case 'info': {
+      markup = `
+        <svg class='alert__icon '>
+            <use xlink:href='/images/sprite.svg#icon-info'/>
         </svg>
         <div class='alert__message'>${message}</div>
 

@@ -182,31 +182,63 @@
   }
 }
 
-
 @keyframes shake {
-  0% { transform: translate(0, 0) rotate(0) }
-  10%, 30%, 50%, 70%, 90% { transform: translate(-10px, 0) rotate(-5deg) }
-  20%, 40%, 60%, 80% { transform: translate(10px, 0) rotate(5deg) }
-  100% { transform: translate(0, 0) rotate(0) }
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-10px, 0) rotate(-5deg);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(10px, 0) rotate(5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
 }
 
 .element-to-shake {
-  animation: shake 25s cubic-bezier(.36,.07,.19,.97) infinite;
+  animation: shake 25s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
 }
-
 
 .element-to-shake-once {
   animation: shake 1s ease-in-out 1;
 }
 
-
 @keyframes shake-up-down {
-  0% { transform: translate(0, 0)  }
-  10%, 30%, 50%, 70%, 90% { transform: translate(0, -10px)  scale(1.05) }
-  20%, 40%, 60%, 80% { transform: translate(0, 10px) scale(1) }
-  100% { transform: translate(0, 0) }
+  0% {
+    transform: translate(0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(0, -10px) scale(1.05);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(0, 10px) scale(1);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .background-to-shake {
-  animation:  shake-up-down 40s cubic-bezier(.36,.07,.19,.97) infinite;
+  animation: shake-up-down 40s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+}
+
+.spin {
+  color: var(--color-primary) !important;
+  animation: lds-dual-ring 0.7s linear infinite;
 }

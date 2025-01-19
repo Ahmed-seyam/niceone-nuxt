@@ -3,6 +3,8 @@ nav:
   login: دخول
   register: تسجيل
   account: حسابي
+  logout: خروج
+
 button:
   toggle_langs: "غير اللغه"
   see_all: أعرض الكل
@@ -34,8 +36,32 @@ footer:
   terms_and_conditions: الشروط والأحكام
   policy: السياسة
 
+discount: خصم
 categories: الأقسام
 company: نايس وان
+
+choose_size: أختر حجم
+choose_color: أختر لون
+from_manufacturer: من ماركة
+original_product: منتج أصلي
+vat_included: السعر شامل الضريبه
+add_to_cart: أضف الي السلة 
+this_product_can_not_be_returnded: هذا المنتج لا يمكن استرجاعه
+similar_products: منجات متشابهة
+recent_reviews: اخر التقييمات
+pay_now: أدفع الأن
+filter: فرز
+apply: تطبيق
+reset: اعاده ضبط
+login_into_your_account: أدخل الي حسابك
+register_new_account: سجل حساب جديد
+username: الاسم
+user_dashboard: صفحة المستخدم
+admin_dashoard: صفحة الأدمن
+out_of_stock: غير متوفر في المخزن
+in_stock: متوفر في المخزن
+unlike: الغاء اعجاب
+
 
 dashboard:
   special_offers: عروض مخصصة لك
@@ -66,3 +92,19 @@ shipping: الشحن
 product:
   add_to_cart: أضف للسلة
   new: جديد
+
+
+description: الوصف
+specifications: الخصائص
+
+email: الاميل
+password: كلمة السر
+password_confirm: اعد كتابة كلمة السر
+
+
+original_price: السعر الأصلي
+order_summary: ملخص الطلبية
+total_price_is: اجمالي السعر هو 
+
+size: حجم
+color: لون

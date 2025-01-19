@@ -32,6 +32,10 @@ import Inplace from 'primevue/Inplace'
 import InputMask from 'primevue/InputMask'
 import DynamicDialog from 'primevue/DynamicDialog'
 import Dialog from 'primevue/dialog'
+import Tooltip from 'primevue/tooltip'
+import Card from 'primevue/card'
+import Slider from 'primevue/slider'
+import ProgressSpinner from 'primevue/progressspinner'
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(PrimeVue, { ripple: true })
@@ -64,9 +68,13 @@ export default defineNuxtPlugin((nuxtApp) => {
     .component('InputMask', InputMask)
     .component('DynamicDialog', DynamicDialog)
     .component('Dialog', Dialog)
+    .component('Slider', Slider)
+    .component('ProgressSpinner', ProgressSpinner)
 
     .component('Rating', Rating)
+    .component('Card', Card)
 
   nuxtApp.vueApp.directive('ripple', Ripple)
   nuxtApp.vueApp.directive('focustrap', FocusTrap)
+  nuxtApp.vueApp.directive('tooltip', Tooltip)
 })

@@ -1,6 +1,7 @@
-export const fetchReviewsOfProduct = (productId) =>
+export const fetchReviewsOfProduct = (productId, query = {}) =>
   useMyFetch(`/api/v1/review/get-product-reviews/${productId}`, {
     method: 'GET',
+    query,
   })
 
 export const fetchMyReviews = () =>

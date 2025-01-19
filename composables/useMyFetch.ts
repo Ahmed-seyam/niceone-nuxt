@@ -1,29 +1,23 @@
-export const useMyFetch = (request: any, opts: any) => {
-  const runtimeConfig = useRuntimeConfig()
+export const useMyFetch = (request: any, opts: any = {}) => {
+  const runTimeConfig = useRuntimeConfig()
+  const locale = useState<string>('locale.setting')
 
-  // type UseFetchOptions = {
-  //     key?: string
-  //     method?: string
-  //     query?: SearchParams
-  //     params?: SearchParams
-  //     body?: RequestInit['body'] | Record<string, any>
-  //     headers?: Record<string, string> | [key: string, value: string][] | Headers
-  //     baseURL?: string
-  //     server?: boolean
-  //     lazy?: boolean
-  //     immediate?: boolean
-  //     default?: () => DataT
-  //     transform?: (input: DataT) => DataT
-  //     pick?: string[]
-  //     watch?: WatchSource[]
-  //   }
+  if (!opts.query) opts.query = {}
+  if (opts && opts.query)
+    opts.query = {
+      ...opts.query,
+      currencyId: '646f759538e9f5aeed137cee',
+      lang: locale.value,
+      limit: 10,
+    }
 
-  return useFetch(() => request, {
+  return $fetch(request, {
     baseURL:
-      runtimeConfig.public.nodeENV === 'dev'
-        ? runtimeConfig.public.apiDevBase
-        : runtimeConfig.public.apiProdBase,
+      runTimeConfig.public.nodeENV === 'dev'
+        ? runTimeConfig.public.apiDevBase
+        : runTimeConfig.public.apiProdBase,
     ...opts,
-    credentials: true,
+    credentials: 'include',
+    lazy: true,
   })
 }

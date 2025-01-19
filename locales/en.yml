@@ -3,7 +3,7 @@ nav:
   login: login
   register: register
   account: my account
-
+  logout: logout
 button:
   toggle_langs: Change languages
   see_all: see all
@@ -35,7 +35,29 @@ footer:
   policy: policy
 
 company: nice one
+choose_size: choose size
+choose_color: choose color
+from_manufacturer: made by brand 
+original_product: original
+vat_included: VAT included
+add_to_cart: add to cart
+this_product_can_not_be_returnded: this product can not be returnded
+recent_reviews: recent reviews
+pay_now: pay now
+similar_products: similar products
+filter: filter
+out_of_stock: out of stock
+in_stock: in stock
+apply: apply
+reset: reset
+username: username
+unlike: unlike
+login_into_your_account: login into your account
+register_new_account: register a new account
 
+discount: discount
+user_dashboard: user dashboard
+admin_dashoard: admin dashboard
 dashboard:
   special_offers: special offers
   just_for_you: just for you
@@ -65,3 +87,17 @@ shipping: shipping
 product:
   add_to_cart: add to cart
   new: new
+
+description: Description
+specifications: Specifications
+
+email: email
+password: password
+password_confirm: password confirm
+
+original_price: original price 
+order_summary: order summary 
+total_price_is: total price is 
+
+size: size
+color: color

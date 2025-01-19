@@ -3,6 +3,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   nuxtApp.vueApp.config.globalProperties.$filters = {
     t(name: string, locale: string) {
+      //name_en 
       return name + locale
     },
   }

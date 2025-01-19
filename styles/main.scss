@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
 @import './abstract/_vars.scss';
 
 @import './abstract/_mixins.scss';
@@ -55,4 +56,38 @@ body,
 .p-inputtext {
   width: 100% !important;
   border: none !important;
+}
+
+[dir='ltr'] .p-component,
+.p-component-overlay {
+  font-family: 'Karla', sans-serif !important;
+}
+
+[dir='rtl'] .p-component,
+.p-component-overlay {
+  font-family: myFirstFont;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/din-next-lt-w23-regular.ttf);
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/din-next-lt-w23-bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/din-next-lt-w23-medium.ttf);
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/din-next-lt-w23-regular.ttf);
+  font-weight: light;
 }

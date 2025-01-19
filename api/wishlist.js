@@ -1,7 +1,8 @@
-export const fetchMyWishlist = (query) =>
-  useMyFetch(`/api/v1/wishlist`, {
+export const fetchMyWishlist = (query) => {
+  return useMyFetch(`/api/v1/wishlist`, {
     query,
   })
+}
 
 export const deleteMyWishlist = () =>
   useMyFetch(`/api/v1/wishlist`, {

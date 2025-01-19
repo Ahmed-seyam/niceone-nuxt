@@ -1,7 +1,8 @@
-export const fetchCategories = (query) =>
-  useMyFetch(`/api/v1/category?root=true`, {
+export const fetchCategories = (query) => {
+  return useMyFetch(`/api/v1/category?root=true`, {
     query,
   })
+}
 
 export const fetchOneCategory = (catId) =>
   useMyFetch(`/api/v1/category/${catId}`)
